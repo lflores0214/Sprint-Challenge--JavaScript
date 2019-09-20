@@ -8,7 +8,7 @@
 function CuboidMaker(att) {
   (this.length = att.length),
     (this.width = att.width),
-    (this.heigth = att.height);
+    (this.height = att.height);
 }
 
 /* == Step 2: Volume Method ==
@@ -29,8 +29,8 @@ CuboidMaker.prototype.sa = function() {
   return (
     (this.length * this.width) +
     (this.length * this.height) +
-    (this.width * this.height)
-  );
+    (this.width * this.height) 
+  )*2;
 };
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
@@ -47,8 +47,5 @@ const cuboid = new CuboidMaker({
 console.log(cuboid.volume()); // 100
 console.log(cuboid.sa()); // 130
 
-console.log(cuboid.width);
-console.log(cuboid.length);
-console.log(cuboid.heigth);
 
 

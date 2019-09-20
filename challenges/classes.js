@@ -3,13 +3,14 @@ class CuboidMakers {
     constructor(att) {
         (this.length = att.length),
             (this.width = att.width),
-            (this.heigth = att.height);
+            (this.height = att.height);
     }
     volume() {
         return (this.length * this.width * this.height);
     }
     sa() {
-        return ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
+        return (this.length * this.width + this.length * this.height + this.width * this.height)*2;
+
     }
 }
 
